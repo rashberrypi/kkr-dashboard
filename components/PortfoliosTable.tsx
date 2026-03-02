@@ -31,7 +31,13 @@ export default function PortfoliosTable() {
 
   return (
     <div style={{ marginTop: "40px" }}>
-      <h2 style={{ marginBottom: "20px" }}>All Portfolios</h2>
+      <h1 style={{
+        fontSize: "2rem",
+        fontWeight: "700",
+        color: "#ffffff",
+        marginBottom: "8px",
+        letterSpacing: "-0.025em"
+      }}>All Portfolios</h1>
 
       <div style={{ overflowX: "auto" }}>
         <table style={{ width: "100%", borderCollapse: "collapse" }}>

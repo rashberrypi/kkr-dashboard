@@ -30,7 +30,25 @@ export default function PeopleTable() {
 
   return (
     <div style={{ marginTop: "40px" }}>
-      <h2 style={{ marginBottom: "20px" }}>All People</h2>
+      <div>
+        <h1 style={{
+          fontSize: "2rem",
+          fontWeight: "700",
+          color: "#ffffff",
+          marginBottom: "8px",
+          letterSpacing: "-0.025em"
+        }}>
+          All People
+        </h1>
+        <p style={{
+          fontSize: "1rem",
+          color: "#666",
+          marginTop: "0",
+          marginBottom: "24px"
+        }}>
+          Select a person to view details
+        </p>
+      </div>
 
       <div style={{ overflowX: "auto" }}>
         <table style={{ width: "100%", borderCollapse: "collapse" }}>

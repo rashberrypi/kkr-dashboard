@@ -12,6 +12,7 @@ import BarBlock from "@/components/charts/BarBlock";
 import RelationshipsTable from "@/components/RelationshipsTable";
 import PortfoliosTable from "@/components/PortfoliosTable";
 import PeopleTable from "@/components/PeopleTable";
+import ControlCenter from "@/components/ControlCenter";
 
 export default function Home() {
   const [overview, setOverview] = useState<any>(null);
@@ -83,6 +84,9 @@ export default function Home() {
           zIndex: 100,
         }}
       >
+        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+          <ControlCenter />
+        </div>
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <div
             style={{
@@ -189,7 +193,7 @@ export default function Home() {
             fontSize: "12px",
           }}
         >
-          Jerry Intelligence Platform — Berry SRL © 2025
+          Jerry Intelligence Platform — Berry SRL © 2026
         </div>
       </div>
     </div>

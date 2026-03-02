@@ -1,14 +1,29 @@
-export default function KpiCard({ onClick, title, value, icon, accent, dim }: any) {
+export default function KpiCard({
+  title,
+  value,
+  icon,
+  accent = false,
+  dim = false,
+  onClick,
+}: {
+  title: string;
+  value: number;
+  icon: string;
+  accent?: boolean;
+  dim?: boolean;
+  onClick?: () => void;
+}) {
   return (
     <div
       onClick={onClick}
       style={{
+        background: accent ? "#111" : "#0a0a0a",
+        border: accent ? "1px solid #E900FF" : "1px solid #1a1a1a",
+        boxShadow: accent ? "0 0 15px rgba(233,0,255,0.4)" : "none",
         cursor: onClick ? "pointer" : "default",
-        transition: "all 0.2s",
-        background: "#0a0a0a",
-        border: "1px solid #1a1a1a",
-        borderRadius: "12px",
         padding: "28px 24px",
+        borderRadius: "8px",
+        transition: "all 0.2s ease",
       }}
     >
       {accent && (
