@@ -3,7 +3,7 @@ import { API } from "@/lib/constants";
 
 async function getPerson(id: string) {
     const res = await fetch(
-        `${process.env.API_URL}/people/${id}`,
+        `${API}/people/${id}`,
         { cache: "no-store" }
     );
 
